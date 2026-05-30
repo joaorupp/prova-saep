@@ -36,6 +36,24 @@ def registrar_movimentacao_view(request, produto_id):
             usuario_responsavel=request.user # Usa o utilizador que fez login
         )
         
-        return redirect('lista_produtos')
+        return redirect('lista_produtos_view')
 
     return render(request, 'gestao/movimentacao.html', {'produto': produto, 'erro': erro})
+
+    # cadastra produto
+from django.shortcuts import render, redirect
+from .models import Produto  # Certifique-se de que o model se chama Produto
+
+def cadastrar_produto(request):
+    if request.method == 'POST':
+        nome = request.POST.get('nome')
+        quantidade = request.POST.get('quantidade_estoque')
+        
+        # Cria e salva o registro no banco
+        Produto.objects.create(
+            nome=nome,
+            quantidade_estoque=quantidade
+        )
+        return redirect('lista_produtos')
+        
+    return render(request, 'gestao/cadastrar.html')
