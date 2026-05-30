@@ -1,0 +1,80 @@
+/* gestao/static/gestao/estilos.css */
+
+/* Configurações Gerais */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 40px; 
+    background-color: #f4f4f9; 
+}
+
+/* Tabelas (Página de Listagem) */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    background: white; 
+}
+
+th, td { 
+    border: 1px solid #ccc; 
+    padding: 12px; 
+    text-align: left; 
+}
+
+th { 
+    background-color: #007bff; 
+    color: white; 
+}
+
+tr:nth-child(even) { 
+    background-color: #f2f2f2; 
+}
+
+/* Botões e Links */
+.btn { 
+    padding: 8px 12px; 
+    background: #28a745; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #007bff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+/* Formulários e Cards (Página de Movimentação) */
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    max-width: 400px; 
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+input, select { 
+    width: 100%; 
+    padding: 8px; 
+    box-sizing: border-box; 
+}
+
+/* Mensagens de Erro */
+.error { 
+    color: red; 
+    margin-top: 15px; 
+    font-weight: bold; 
+}

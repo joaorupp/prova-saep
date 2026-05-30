@@ -1,0 +1,17 @@
+PLANO DE TESTES - AVALIAÇÃO SAEP
+Funcionalidade: Saída de Produtos do Almoxarifado
+
+Cenário 1: Saída com Sucesso (Quantidade menor que o stock)
+- Pré-condição: Produto cadastrado com saldo positivo.
+- Dados de Entrada: Quantidade menor que o stock disponível.
+- Resultado Esperado: Operação concluída, stock atualizado e movimentação gravada.
+
+Cenário 2: Bloqueio de Estoque Insuficiente (Quantidade maior que o stock)
+- Pré-condição: Produto cadastrado no sistema.
+- Dados de Entrada: Quantidade maior que o stock disponível.
+- Resultado Esperado: Operação bloqueada e exibição da mensagem padrão exata de erro.
+
+Cenário 3: Saída de Stock Limite (Quantidade exatamente igual ao stock)
+- Pré-condição: Produto cadastrado com quantidade conhecida.
+- Dados de Entrada: Quantidade igual ao stock atual.
+- Resultado Esperado: Operação concluída, stock atualizado para zero e histórico gravado.
