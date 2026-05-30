@@ -38,7 +38,7 @@ def registrar_movimentacao_view(request, produto_id):
         Movimentacao.objects.create(
             produto=produto,
             tipo=tipo,
-            quantidade=quantidade,
+            quantidade=(int)quantidade,
             usuario_responsavel=request.user # Usa o utilizador que fez login
         )
         
