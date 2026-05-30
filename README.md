@@ -39,3 +39,36 @@ python manage.py migrate
 Para não precisar de cadastrar tudo manualmente para os testes, execute o script de carga inicial para criar utilizadores, colaboradores e EPIs de teste:
 
 python seed.py
+
+Fluxo de Trabalho: Criando Branch e Pull Request
+
+# Cria com nome e sobrenome e já muda para a nova branch
+git checkout -b joao-rupp 
+#Exemplos: git checkout -b joao-renan ou marlo-felipe
+
+Passo 3: Programar e fazer os Commits normais
+Trabalhe no VS Code normalmente. Quando terminar a sua tarefa e ela estiver funcionando sem erros, salve localmente na sua branch:
+
+git add .
+git commit -m "Desenvolvida a tela de cadastro de novos EPIs"
+
+Passo 4: Enviar a sua Branch para o GitHub
+Como essa branch só existe no seu computador, você precisa "empurrá-la" para a internet:
+
+git push origin joao-rupp
+
+Como criar o Pull Request (No Navegador)
+Assim que você rodar o comando acima, o código foi para o GitHub, mas ainda não se juntou com o resto do projeto. Para juntar, faça o seguinte:
+
+Abra o site do seu repositório no GitHub.
+
+Você verá uma barra amarela no topo com um botão verde escrito "Compare & pull request". Clique nele!
+(Se não aparecer, vá na aba "Pull requests" e clique no botão verde "New pull request").
+
+Escolha a sua branch para juntar com a main.
+
+Escreva um título claro e uma breve descrição do que você fez (ex: "Criei o formulário de EPIs e testei a validação de campos").
+
+Clique no botão verde "Create pull request". 
+
+PRONTO, ENVIADO!
