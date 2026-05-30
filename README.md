@@ -6,13 +6,14 @@ Este é um projeto base desenvolvido em **Django** e **MySQL** para a gestão, c
 
 ## 🚀 Como Clonar e Configurar o Projeto
 
+
 Siga os passos abaixo para configurar o projeto no seu ambiente local.
 
 1. Clonar o Repositório
 No seu terminal, clone o projeto e aceda à pasta:
 ```bash
 git clone <https://github.com/joaorupp/prova-saep>
-cd nome-da-pasta-do-projeto
+cd prova-saep
 
 2. Criar e Ativar o Ambiente Virtual (.venv)
 É necessário criar um ambiente isolado para instalar as dependências do Python:
@@ -40,8 +41,6 @@ Para não precisar de cadastrar tudo manualmente para os testes, execute o scrip
 
 python seed.py
 
-Fluxo de Trabalho: Criando Branch e Pull Request
-
 # Cria com nome e sobrenome e já muda para a nova branch
 git checkout -b joao-rupp 
 #Exemplos: git checkout -b joao-renan ou marlo-felipe
@@ -50,7 +49,7 @@ Passo 3: Programar e fazer os Commits normais
 Trabalhe no VS Code normalmente. Quando terminar a sua tarefa e ela estiver funcionando sem erros, salve localmente na sua branch:
 
 git add .
-git commit -m "Desenvolvida a tela de cadastro de novos EPIs"
+git commit -m "feat: Desenvolvimento da regra de negócio"
 
 Passo 4: Enviar a sua Branch para o GitHub
 Como essa branch só existe no seu computador, você precisa "empurrá-la" para a internet:
@@ -60,7 +59,7 @@ git push origin joao-rupp
 Como criar o Pull Request (No Navegador)
 Assim que você rodar o comando acima, o código foi para o GitHub, mas ainda não se juntou com o resto do projeto. Para juntar, faça o seguinte:
 
-Abra o site do seu repositório no GitHub.
+Abra o repositório no GitHub. https://github.com/joaorupp/prova-saep
 
 Você verá uma barra amarela no topo com um botão verde escrito "Compare & pull request". Clique nele!
 (Se não aparecer, vá na aba "Pull requests" e clique no botão verde "New pull request").
@@ -71,4 +70,4 @@ Escreva um título claro e uma breve descrição do que você fez (ex: "Criei o 
 
 Clique no botão verde "Create pull request". 
 
-PRONTO, ENVIADO!
+PRONTO, ENVIADO!!!
