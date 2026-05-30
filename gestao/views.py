@@ -16,7 +16,13 @@ def registrar_movimentacao_view(request, produto_id):
     if request.method == "POST":
         tipo = request.POST.get('tipo')
         quantidade = int(request.POST.get('quantidade'))
-        
+
+        if quantidade <= 0:
+            print("A quantidade deve ser maior que 0")
+        elif quantidade > estoque:
+            print("Quantidade inserida é maior que o estoque disponível!")
+        else:
+            return quantidade = int(request.POST.get('quantidade'))
         # --- ESTADO INICIAL PARA OS ALUNOS ---
         # Aqui o sistema simplesmente aceita a operação sem validar nada.
         # Na prova, o aluno terá de modificar este trecho!
