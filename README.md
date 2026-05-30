@@ -70,4 +70,5 @@ Escolha a sua branch para juntar com a main.
 Escreva um título claro e uma breve descrição do que você fez (ex: "Criei o formulário de EPIs e testei a validação de campos").
 
 Clique no botão verde "Create pull request". 
-PRONTO
+
+PRONTO, ENVIADO!
